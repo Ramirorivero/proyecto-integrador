@@ -5,8 +5,27 @@
      text-align: center;
      font-size: 15px;
      &__paragraph{
-       
         margin-bottom: 20px;
-    
      }
+     @media (max-width: 912px) {
+      & {
+        height: 250px;
+        font-size: 14px;
+      }
+  }
+  @media (max-width: 530px) {
+    & {
+     
+      font-size: 13px;
+    }
+}
+@media (max-width: 332px) {
+  & {
+   height: 300px;
+    font-size: 12px;
+  }
+}
+
+
+
 }
