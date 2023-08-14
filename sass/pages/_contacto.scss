@@ -1,133 +1,125 @@
-
 #menu2 {
-    display: none;
-  
-    &:checked + .nav-bar {
+  display: none;
+
+  &:checked + .nav-bar {
+    display: block;
+  }
+}
+
+.menu-toggle2 {
+  display: none;
+  background-color: #232f3e;
+  flex: 0 0 3em;
+  position: relative;
+  cursor: pointer;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232f3e;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    & {
       display: block;
     }
-  
-   
+  }
+}
+.menu-toggle2:hover {
+  border-radius: 5px;
+  border: #fff solid 1px;
 }
 
-    .menu-toggle2 {
-        display: none;
-        background-color: #232F3E;
-        flex: 0 0 3em;
-        position: relative;
-        cursor: pointer;
-       
-    
-
-        &__label {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #232F3E;
-          height: 100%; 
-        }
-      
-        @media (max-width: 768px) {
-          & {
-            display: block;
-          }
-        }
-      }
-      .menu-toggle2:hover{
-        border-radius:5px;
-        border:#fff solid 1px
-      }
-       
-
-
-.form{
-    padding-top: 125px;
-    background-color: #F2E3CB;
-    padding-bottom: 50px;
+.form {
+  padding-top: 125px;
+  background-color: #f2e3cb;
+  padding-bottom: 50px;
 }
-.primerfieldset{
-    text-align: center;
-    margin: 20px 200px;
-    background-color: #206E8C;
+.primerfieldset {
+  text-align: center;
+  margin: 20px 200px;
+  background-color: #206e8c;
+  border-radius: 10px;
+  border: 3px solid #000;
+
+  &__legend {
+    text-align: start;
+    background-color: #ff6a00;
+    color: #232f3e;
     border-radius: 10px;
+    padding: 10px;
     border: 3px solid #000;
-   
-
-
-    &__legend{
-        text-align: start;
-        background-color: #FF6A00;
-        color: #232F3E;
-        border-radius: 10px;
-        padding: 10px;
-        border: 3px solid #000;
-    }
-    &__elementobloque{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        
-    }
-    &__inputcajas,&__textarea{
-        width: 70%;
-        height: 25px;
-        border-radius: 3px;
-        border: 0.5px solid #4D6D63;
-        outline:none;
-        border-radius: 5px;
-    }
-    &__inputcajas:focus-within,&__textarea:focus-within{
-        border: #000 solid 3px;
-       }
-    &__textarea{
-        height: 100px;
-
-
-    }
-    @media (max-width: 850px) {
-        & {
-            margin: 20px 100px;
-        }
-}
-@media (max-width: 640px) {
+  }
+  &__elementobloque {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__inputcajas,
+  &__textarea {
+    width: 70%;
+    height: 25px;
+    border-radius: 3px;
+    border: 0.5px solid #4d6d63;
+    outline: none;
+    border-radius: 5px;
+  }
+  &__inputcajas:focus-within,
+  &__textarea:focus-within {
+    border: #000 solid 3px;
+  }
+  &__textarea {
+    height: 100px;
+  }
+  @media (max-width: 850px) {
     & {
-        margin: 20px 50px;
+      margin: 20px 100px;
     }
-}
-@media (max-width: 475px) {
+  }
+  @media (max-width: 640px) {
     & {
-        margin: 20px 30px;
+      margin: 20px 50px;
     }
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 475px) {
     & {
-        margin: 20px 10px;
+      margin: 20px 30px;
     }
+  }
+  @media (max-width: 400px) {
+    & {
+      margin: 20px 10px;
+    }
+  }
 }
-
-}
-.contenedorbotones{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #F2E3CB;
-    &__btn1 ,&__btn2{
-        background-color: #FF6A00;
-        color: #fff;
-        border-radius: 10px;
-        width: 150px;
-        height: 45px;
-        font: 900 19px 'Bakbak One', cursive, sans-serif;
-        color: #232F3E;
-    }
-    &__btn1:hover ,&__btn2:hover{
-        background-color: #ffb310;
-        color:#fff;
-    }
-    &__btn1:focus ,&__btn2:focus{
-        box-shadow: 8px 8px 8px #fff;
-        transform: translateY(2px) translateX(2px);
-    }
-    @media(max-width:1110px){
-        justify-content: center;
-    }
+.contenedorbotones {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #f2e3cb;
+  &__btn1,
+  &__btn2 {
+    background-color: #ff6a00;
+    color: #fff;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+    font: 900 19px "Bakbak One", cursive, sans-serif;
+    color: #232f3e;
+  }
+  &__btn1:hover,
+  &__btn2:hover {
+    background-color: #ffb310;
+    color: #fff;
+  }
+  &__btn1:focus,
+  &__btn2:focus {
+    box-shadow: 8px 8px 8px #fff;
+    transform: translateY(2px) translateX(2px);
+  }
+  @media (max-width: 1110px) {
+    justify-content: center;
+  }
 }
